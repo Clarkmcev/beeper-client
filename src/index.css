@@ -11,3 +11,165 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  body {
+    @apply bg-primary text-ternary
+  }
+
+  form {
+    @apply text-left mt-10
+  }
+
+  input {
+    @apply w-full rounded-md text-primary p-2 focus:bg-ternary  focus:border-none outline-secondary outline-none my-3
+  }
+
+  label {
+    @apply my-10
+  }
+
+  p {
+    @apply font-thin text-fourth
+  }
+
+  .icon-base {
+    @apply text-fourth hover:text-ternary
+  }
+
+  .error-message {
+    @apply bg-red-500 my-2 p-3 rounded-lg text-red-100 text-xs
+  }
+
+  .navbar {
+    @apply bg-primary text-fourth flex flex-wrap justify-evenly p-10 flex-col w-3/12 h-screen text-left
+  }
+
+  .inside-navbar {
+    @apply flex flex-wrap
+  }
+
+  .container {
+    @apply bg-primary w-6/12 p-40
+  }
+
+  .icon {
+    @apply relative top-1 w-9
+  }
+
+  .compartiment {
+    @apply bg-primary w-3/12 p-20
+  }
+
+  .interface {
+    @apply bg-primary rounded-xl w-fit m-auto p-10 shadow-sm py-2
+  }
+
+  .beep-creation{
+    @apply mt-10 w-5/12
+  }
+
+  .btn {
+    @apply bg-secondary w-full my-5 rounded-lg p-2 hover:bg-ternary hover:text-primary
+  }
+
+  .title {
+    @apply font-bold text-2xl m-2 text-left 
+  }
+
+  /* post */
+  .post-options {
+    @apply flex flex-wrap justify-evenly h-fit my-auto
+  }
+
+  .tools {
+    @apply flex flex-wrap justify-between text-center
+  }
+
+  .post-icon {
+    @apply mr-5
+  }
+
+  .img-prev {
+    @apply w-full  rounded-lg
+  }
+
+  /* signup-success */
+  .icon-success {
+    @apply text-ternary mx-auto
+  }
+
+  /* profile page */
+  .profile {
+    @apply mt-10 w-5/12
+  }
+
+  .background-picture {
+    @apply h-48 bg-fourth rounded-t-2xl
+  }
+
+  .profile-img {
+    @apply border-8 border-primary relative top-28 left-5
+  }
+
+  .user-info {
+    @apply text-left m-10 mt-20
+  }
+
+  .followings {
+    @apply flex flex-wrap
+  }
+
+  .my-beeps {
+    @apply flex flex-wrap justify-between
+  }
+
+  .edit-button {
+    @apply top-8 relative float-right mr-5 w-16
+  }
+  
+  .edit-page {
+    @apply relative bg-ternary w-5/12 p-40 m-auto
+  }
+
+  .text-section {
+    @apply mt-20 
+  }
+
+  .bio {
+    @apply align-text-top
+  }
+
+  .edit-profile-img {
+    @apply absolute bg-primary p-2 rounded-full top-72 translate-x-32
+  }
+
+  .edit-background-photo {
+    @apply absolute bg-primary p-2 rounded-full hover:bg-secondary
+  }
+
+  .close-btn {
+    @apply mx-10 text-ternary 
+  }
+  
+  .top-section-edit {
+    @apply flex flex-wrap justify-between my-2
+  }
+
+  .save-btn {
+    @apply w-fit float-left my-5 border-2 rounded-2xl p-2 border-fourth hover:text-ternary text-fourth hover:border-ternary
+  }
+
+
+}
+
+.profile-img {
+  vertical-align: middle;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
